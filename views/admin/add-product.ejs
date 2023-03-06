@@ -1,0 +1,18 @@
+<%- include('../includes/head.ejs') %>
+</head>
+<body>
+<%- include('../includes/navigation.ejs') %>
+
+
+    <main class="main-content">
+        <form class="main-form" action="/admin/add-product" method="POST">
+            <img src="/img/logo-black.png" height="50px" alt="Logo">
+
+            <input class="input" type="text" name="title" placeholder="Ime proizvoda">
+            <input class="input" type="text" name="l_picture" placeholder="Link do slike">
+            <textarea class="input" name="description" cols="30" rows="5" placeholder="Unesi opis"></textarea>
+            <!-- <input class="input" type="text" name="description" placeholder="Unesi opis"> -->
+            <button class="dugme" type="submit">Add Product</button>
+        </form>
+    </main>
+<%- include('../includes/end.ejs') %>

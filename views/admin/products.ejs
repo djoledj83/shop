@@ -1,0 +1,45 @@
+<%- include('../includes/head.ejs') %>
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+
+
+
+            <h1>Maintence users</h1>
+            <main class="main-content">
+
+                <!-- <div class="naslov"> -->
+                <% if (prods.length> 0) { %>
+                    <% for (let product of prods) { %>
+                        <!-- <div class="card"> -->
+                        <div class="a-box">
+                            <div class="img-container">
+                                <div class="img-inner">
+                                    <div class="inner-skew">
+                                        <img src="<%= product.link %>">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-container">
+                                <h3><%= product.title %></h3>
+                                <div>
+                                    <p class="desc_text"><%= product.desc %></p>
+                                </div>
+                                <div class="btns">
+                                    <a href="admin/edit-product" class="dugme dugme_g" type="submit">Edit</a>
+                                    <form action="/admin/delete-product" method="POST">
+                                        <button class="del dugme" type="submit">Delete</button>
+                                    </form>
+                                </div>
+                                <a href="admin/edit-product" class="dugme sign dugme_g" type="submit">Potpisi</a>
+                            </div>
+                        </div>
+                        <% } %>
+                            <% } else { %>
+                                <h1>Nema Nista</h1>
+                                <% } %>
+                                    <!-- </div> -->
+            </main>
+
+            <%- include('../includes/end.ejs') %>

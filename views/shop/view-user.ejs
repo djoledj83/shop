@@ -1,0 +1,22 @@
+<%- include('../includes/head.ejs') %>
+</head>
+<!-- <meta http-equiv="refresh" content="2" > -->
+<body>
+<%- include('../includes/navigation.ejs') %>
+    
+<main>
+    <div class="container">
+        <div class="user_profile">
+            <h1 class="naslov"><%= user.title %></h1>
+            <div class="user_view">
+                <div class="user_image img-hover-zoom">
+                    <img class="profil_sl" src="<%= user.link %>">
+                </div>
+                <p class="user_text"><%= user.desc %></p>
+            </div>
+            <a class="dugme" href="/users/<%= user.id %>" class="dugme">Details</a>
+
+      </div>
+</main>
+
+<%- include('../includes/end.ejs') %>

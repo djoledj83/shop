@@ -1,0 +1,12 @@
+    <main class="main-content">
+        <div class="naslov">
+            {{#if hasProducts }}
+            <h1>Proizvodi</h1>
+            {{#each prods}}
+            <p>{{ this.title }}</p>
+            {{/each}}
+            {{ else }}
+                <h1>Nema nista.</h1>
+            {{/if}}
+        </div>
+    </main>

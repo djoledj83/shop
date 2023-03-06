@@ -1,0 +1,42 @@
+<header class="main-header">
+  <nav class="main-nav">
+    <img src="/img/logo.png" height="40px" alt="Logo" />
+    <ul class="nav-list">
+      <li class="main-list">
+        <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
+      </li>
+      <li class="main-list">
+        <a class="<%= path === '/login' ? 'active' : '' %>" href="/login"
+          >Login</a
+        >
+      </li>
+      <li class="main-list">
+        <a
+          class="<%= path === '/admin/add-product' ? 'active' : '' %>"
+          href="/admin/add-product"
+          >Register</a
+        >
+      </li>
+      <li class="main-list">
+        <a class="<%= path === '/users' ? 'active' : '' %>" href="/users"
+          >Users</a
+        >
+      </li>
+      <li class="main-list">
+        <a class="<%= path === '/user' ? 'active' : '' %>" href="/user">User</a>
+      </li>
+      <li class="main-list">
+        <a class="<%= path === '/editUser' ? 'active' : '' %>" href="/editUser"
+          >Edit User</a
+        >
+      </li>
+      <li class="main-list">
+        <a
+          class="<%= path === '/admin/products' ? 'active' : '' %>"
+          href="/admin/products"
+          >Maintence</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
